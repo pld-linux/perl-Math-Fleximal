@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Math
-%define		pnam	Fleximal
+%define	pdir	Math
+%define	pnam	Fleximal
 Summary:	Math::Fleximal - Integers with flexible representations
 Summary(pl):	Math::Fleximal - liczby ca³kowite z elastyczn± reprezentacj±
 Name:		perl-Math-Fleximal
