@@ -10,7 +10,8 @@ Summary(pl):	Math::Fleximal - liczby ca³kowite z elastyczn± reprezentacj±
 Name:		perl-Math-Fleximal
 Version:	0.05
 Release:	1
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	451470bc359c390fcf7175eeaafa7a5a
