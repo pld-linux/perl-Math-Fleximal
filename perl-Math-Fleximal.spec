@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Math
@@ -8,13 +8,14 @@
 Summary:	Math::Fleximal - Integers with flexible representations
 Summary(pl):	Math::Fleximal - liczby ca³kowite z elastyczn± reprezentacj±
 Name:		perl-Math-Fleximal
-Version:	0.03
-Release:	2
+Version:	0.05
+Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	e88f4b1a2034ae8768ecf64c1a17333e
-BuildRequires:	perl-devel >= 5.6
+# Source0-md5:	451470bc359c390fcf7175eeaafa7a5a
+BuildRequires:	perl-Module-Build
+BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -49,17 +50,17 @@ wydajno¶æ nie jest najlepsza.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL \
-	INSTALLDIRS=vendor
-%{__make}
+%{__perl} Build.PL \
+	installdirs=vendor \
+	destdir=$RPM_BUILD_ROOT
+./Build
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:./Build test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+./Build install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
