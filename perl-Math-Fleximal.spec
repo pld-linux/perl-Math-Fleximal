@@ -8,13 +8,13 @@
 Summary:	Math::Fleximal - Integers with flexible representations
 Summary(pl):	Math::Fleximal - liczby ca³kowite z elastyczn± reprezentacj±
 Name:		perl-Math-Fleximal
-Version:	0.05
+Version:	0.06
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	451470bc359c390fcf7175eeaafa7a5a
+# Source0-md5:	885a886fd7d9e4e21dab121348ff39ac
 BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
