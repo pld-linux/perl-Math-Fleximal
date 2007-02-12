@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	Fleximal
 Summary:	Math::Fleximal - Integers with flexible representations
-Summary(pl):	Math::Fleximal - liczby ca≥kowite z elastyczn± reprezentacj±
+Summary(pl.UTF-8):   Math::Fleximal - liczby ca≈Çkowite z elastycznƒÖ reprezentacjƒÖ
 Name:		perl-Math-Fleximal
 Version:	0.06
 Release:	1
@@ -34,18 +34,18 @@ whatever digits you want, and to convert from one to another. Like
 Math::BigInt it is able to handle very large numbers, though
 performance is not very good.
 
-%description -l pl
-Ten pakiet s≥uøy do arytmetyki na liczbach ca≥kowitych przy uøyciu
-innej niø normalna reprezentacji. W arytmetyce o podstawie n jest n
-symboli maj±cych reprezentacjÍ. Autor zamierza≥ nazwaÊ je "glifami",
-ale jako øe s± to ≥aÒcuchy tekstowe, nie by≥a to najlepsza nazwa.
-Po dziwnej sugestii Tye McQueena modu≥ zosta≥ nazwany Math::Fleximal,
-zbiÛr tekstowych reprezentacji "fleksem", a reprezentacje pojedynczych
-cyfr "flekami". Te nazwy nie s± oficjalne... Modu≥ pozwala na
-wykonywanie podstawowych dzia≥aÒ arytmetycznych przy uøyciu dowolnych
-cyfr i przeliczanie ich miÍdzy rÛønymi reprezentacjami. Podobnie do
-Math::BigInt modu≥ moøe liczyÊ na bardzo duøych liczbach, ale
-wydajno∂Ê nie jest najlepsza.
+%description -l pl.UTF-8
+Ten pakiet s≈Çu≈ºy do arytmetyki na liczbach ca≈Çkowitych przy u≈ºyciu
+innej ni≈º normalna reprezentacji. W arytmetyce o podstawie n jest n
+symboli majƒÖcych reprezentacjƒô. Autor zamierza≈Ç nazwaƒá je "glifami",
+ale jako ≈ºe sƒÖ to ≈Ça≈Ñcuchy tekstowe, nie by≈Ça to najlepsza nazwa.
+Po dziwnej sugestii Tye McQueena modu≈Ç zosta≈Ç nazwany Math::Fleximal,
+zbi√≥r tekstowych reprezentacji "fleksem", a reprezentacje pojedynczych
+cyfr "flekami". Te nazwy nie sƒÖ oficjalne... Modu≈Ç pozwala na
+wykonywanie podstawowych dzia≈Ça≈Ñ arytmetycznych przy u≈ºyciu dowolnych
+cyfr i przeliczanie ich miƒôdzy r√≥≈ºnymi reprezentacjami. Podobnie do
+Math::BigInt modu≈Ç mo≈ºe liczyƒá na bardzo du≈ºych liczbach, ale
+wydajno≈õƒá nie jest najlepsza.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
