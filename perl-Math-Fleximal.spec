@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	Fleximal
 Summary:	Math::Fleximal - Integers with flexible representations
-Summary(pl.UTF-8):   Math::Fleximal - liczby całkowite z elastyczną reprezentacją
+Summary(pl.UTF-8):	Math::Fleximal - liczby całkowite z elastyczną reprezentacją
 Name:		perl-Math-Fleximal
 Version:	0.06
 Release:	1
