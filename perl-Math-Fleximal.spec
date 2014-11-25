@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Math
 %define		pnam	Fleximal
+%include	/usr/lib/rpm/macros.perl
 Summary:	Math::Fleximal - Integers with flexible representations
 Summary(pl.UTF-8):	Math::Fleximal - liczby całkowite z elastyczną reprezentacją
 Name:		perl-Math-Fleximal
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	885a886fd7d9e4e21dab121348ff39ac
+URL:		http://search.cpan.org/dist/Math-Fleximal/
 BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -38,8 +39,8 @@ performance is not very good.
 Ten pakiet służy do arytmetyki na liczbach całkowitych przy użyciu
 innej niż normalna reprezentacji. W arytmetyce o podstawie n jest n
 symboli mających reprezentację. Autor zamierzał nazwać je "glifami",
-ale jako że są to łańcuchy tekstowe, nie była to najlepsza nazwa.
-Po dziwnej sugestii Tye McQueena moduł został nazwany Math::Fleximal,
+ale jako że są to łańcuchy tekstowe, nie była to najlepsza nazwa. Po
+dziwnej sugestii Tye McQueena moduł został nazwany Math::Fleximal,
 zbiór tekstowych reprezentacji "fleksem", a reprezentacje pojedynczych
 cyfr "flekami". Te nazwy nie są oficjalne... Moduł pozwala na
 wykonywanie podstawowych działań arytmetycznych przy użyciu dowolnych
