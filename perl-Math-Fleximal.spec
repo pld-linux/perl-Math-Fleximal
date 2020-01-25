@@ -4,7 +4,6 @@
 
 %define		pdir	Math
 %define		pnam	Fleximal
-%include	/usr/lib/rpm/macros.perl
 Summary:	Math::Fleximal - Integers with flexible representations
 Summary(pl.UTF-8):	Math::Fleximal - liczby całkowite z elastyczną reprezentacją
 Name:		perl-Math-Fleximal
